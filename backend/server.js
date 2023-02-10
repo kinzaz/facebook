@@ -1,4 +1,5 @@
 const express = require('express');
+const mongoose = require('mongoose');
 const cors = require('cors');
 const { readdirSync } = require('fs');
 const dotenv = require('dotenv');
@@ -13,7 +14,18 @@ const corsOptions = {
 };
 app.use(cors(corsOptions));
 
+/* Routes */
 readdirSync('./routes').map(r => app.use('/', require('./routes/' + r)));
+
+/* Database */
+mongoose
+	.connect(process.env.DATABASE_URL, {
+		useNewUrlParser: true,
+	})
+	.then(() => console.log('Database connected successfully'))
+	.catch(err => {
+		console.log('error connecting to mongoDB', err);
+	});
 
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {

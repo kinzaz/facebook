@@ -1,24 +1,21 @@
 const express = require('express');
-
 const cors = require('cors');
+const { readdirSync } = require('fs');
+const dotenv = require('dotenv');
+
+dotenv.config();
 
 const app = express();
 
-var corsOptions = {
+const corsOptions = {
 	origin: 'http://localhost:3000',
 	optionsSuccessStatus: 200,
 };
-
 app.use(cors(corsOptions));
 
-app.get('/', (req, res) => {
-	res.send('Welcome from home');
-});
+readdirSync('./routes').map(r => app.use('/', require('./routes/' + r)));
 
-app.get('/page', (req, res) => {
-	res.send('Welcom from another page');
-});
-
-app.listen(8000, () => {
-	console.log('Server is working...');
+const PORT = process.env.PORT || 8000;
+app.listen(PORT, () => {
+	console.log(`Server is running on port ${PORT}...`);
 });

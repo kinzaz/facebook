@@ -1,3 +1,5 @@
 exports.home = (req, res) => {
-	res.send('welcome from user');
+	res.json({
+		message: 'fjdfod',
+	});
 };

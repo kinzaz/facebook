@@ -7,6 +7,8 @@ interface InputProps
 	extends DetailedHTMLProps<
 		InputHTMLAttributes<HTMLInputElement>,
 		HTMLInputElement
-	> {}
+	> {
+	bottom?: boolean;
+}
 
 export type LoginInputProps = InputProps & FieldHookConfig<Values>;

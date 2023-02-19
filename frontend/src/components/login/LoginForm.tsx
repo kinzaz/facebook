@@ -1,17 +1,16 @@
 import cn from 'classnames';
-import { LoginInput } from '../../components/inputs/logininput';
-import { useState } from 'react';
-import * as Yup from 'yup';
+import { LoginInput } from '../inputs/logininput';
+import { useEffect, useState } from 'react';
 import { Formik, Form } from 'formik';
-import styles from './style.module.scss';
 import { Link } from 'react-router-dom';
-
-const loginInfos = {
-	email: '',
-	password: '',
-};
+import { loginValidation } from '../../validationSchemas';
+import styles from './style.module.scss';
 
 export const LoginForm = (): JSX.Element => {
+	const loginInfos = {
+		email: '',
+		password: '',
+	};
 	const [login, setLogin] = useState(loginInfos);
 	const { email, password } = login;
 
@@ -20,15 +19,7 @@ export const LoginForm = (): JSX.Element => {
 		setLogin({ ...login, [name]: value });
 	};
 
-	const loginValidation = Yup.object({
-		email: Yup.string()
-			.email('Must be an email address')
-			.required('Email address is required'),
-		password: Yup.string()
-			.required('Password is required')
-			.min(6, 'Password must be at least 6 characters')
-			.max(20, 'Password must be no longer 20 characters'),
-	});
+
 	return (
 		<div className={styles.wrap}>
 			<div className={styles.headers}>

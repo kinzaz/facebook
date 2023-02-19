@@ -1,5 +1,6 @@
 import { Footer } from '../../components/login/Footer';
 import { LoginForm } from '../../components/login/LoginForm';
+import { RegisterForm } from '../../components/login/RegisterForm';
 import styles from './style.module.scss';
 
 export const Login = (): JSX.Element => {
@@ -7,7 +8,7 @@ export const Login = (): JSX.Element => {
 		<div className={styles.login}>
 			<div className={styles.wrapper}>
 				<LoginForm />
-				<div className={styles.register}></div>
+				{/* <RegisterForm /> */}
 				<Footer />
 			</div>
 		</div>

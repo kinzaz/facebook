@@ -1,4 +1,4 @@
-import styles from '../style.module.scss';
+import styles from './style.module.scss';
 import { GenderProps } from './Gender.props';
 
 export const Gender = ({ handleRegisterChange }: GenderProps): JSX.Element => {

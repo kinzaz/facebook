@@ -1,4 +1,4 @@
-import { UserDataRegistration } from '../types';
+import { UserDataRegistration } from '../../types';
 
 export interface FormFieldsProps {
 	handleRegisterChange: (

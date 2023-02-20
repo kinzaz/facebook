@@ -1,5 +1,5 @@
-import { useDate } from '../../../../hooks/useDate';
-import styles from '../style.module.scss';
+import { useDate } from '../../../../../hooks/useDate';
+import styles from './style.module.scss';
 import { DateOfBirthSelectProps } from './DateOfBirthSelect.props';
 
 export const DateOfBirthSelect = ({

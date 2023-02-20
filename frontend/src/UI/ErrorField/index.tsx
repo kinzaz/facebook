@@ -1,7 +1,7 @@
-import { ErrorFieldProps } from './errorField.props';
 import { ErrorMessage, useField } from 'formik';
 import cn from 'classnames';
 import styles from './style.module.scss';
+import { ErrorFieldProps } from './errorField.props';
 
 export const ErrorField = ({
 	name,

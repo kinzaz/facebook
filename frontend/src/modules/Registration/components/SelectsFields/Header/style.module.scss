@@ -1,0 +1,10 @@
+.line-header {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	font-size: 13px;
+	color: var(--color-secondary);
+	i {
+		margin-top: 3px;
+	}
+}

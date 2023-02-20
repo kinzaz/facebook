@@ -1,9 +1,10 @@
 import { ErrorMessage, useField } from 'formik';
-import { RegisterInputProps } from './RegisterInput.props';
 import { useMediaQuery } from 'react-responsive';
 import styles from './style.module.scss';
-import { ErrorField } from '../../../UI/ErrorField';
-import { AuthInput } from '../authInput';
+import { AuthInput } from 'components/inputs/authInput';
+import { ErrorField } from 'UI/ErrorField';
+import { FormInput } from 'UI/Inputs/FormInput';
+import { RegisterInputProps } from './RegisterInput.props';
 
 export const RegisterInput = ({
 	bottom,
@@ -18,7 +19,7 @@ export const RegisterInput = ({
 	return (
 		<>
 			<div className={styles['register-input']}>
-				<AuthInput
+				<FormInput
 					className={errorExist ? styles['error-border'] : ''}
 					{...field}
 					{...props}

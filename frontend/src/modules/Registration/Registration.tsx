@@ -1,14 +1,14 @@
-import { Formik, Form } from 'formik';
+import { Form, Formik } from 'formik';
 import { useState } from 'react';
-import { registerValidation } from '../../../validationSchemas';
-import { Blur } from '../../Blur';
+import { Blur } from 'UI/Blur';
+import { FormFields } from './components/FormFields';
+import { HeaderRegistration } from './components/HeaderRegistration';
+import { RegisterWrapper } from './components/RegisterWrapper';
 import styles from './style.module.scss';
-import { FormFields } from './FormFields';
-import { HeaderRegistration } from './HeaderRegistration';
-import { RegisterWrapper } from './RegisterWrapper';
 import { UserDataRegistration } from './types';
+import { registerValidation } from './validationSchema';
 
-export const RegisterForm = (): JSX.Element => {
+export const Registration = (): JSX.Element => {
 	const userInfos = {
 		first_name: '',
 		last_name: '',

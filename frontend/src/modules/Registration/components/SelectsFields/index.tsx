@@ -1,5 +1,5 @@
 import { DateOfBirthSelect } from './DateOfBirthSelect';
-import { Gender } from './Gender';
+import { GenderSelects } from './GenderSelects';
 import { Header } from './Header';
 
 export const SelectsFields = (): JSX.Element => {
@@ -7,8 +7,7 @@ export const SelectsFields = (): JSX.Element => {
 		<>
 			<Header title="Date of Birth" />
 			<DateOfBirthSelect />
-			<Header title="Gender" />
-			<Gender />
+			<GenderSelects />
 		</>
 	);
 };

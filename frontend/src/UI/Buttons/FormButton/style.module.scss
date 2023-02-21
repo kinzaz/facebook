@@ -1,0 +1,21 @@
+.open-signup {
+	border: none;
+	background: var(--green-color);
+	width: 70%;
+	font-weight: 600;
+	font-size: 14px;
+	padding: 8.5px 12px;
+	border-radius: 7px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+	cursor: pointer;
+	&_blue {
+		background: var(--blue-color);
+	}
+	&_17px {
+		font-size: 17px;
+	}
+}

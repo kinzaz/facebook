@@ -1,12 +1,12 @@
 import { DateOfBirthSelect } from '../SelectsFields/DateOfBirthSelect';
 import { InfoRegistration } from '../InfoRegistration';
-import { Gender } from '../SelectsFields/Gender';
 import styles from '../../style.module.scss';
 import { FormFieldsProps } from './FormFields.props';
 import { RegisterInput } from '../RegisterInput';
 import { InitialsInputs } from '../InitialsInputs';
 import { Header } from '../SelectsFields/Header';
 import { SelectsFields } from '../SelectsFields';
+import { FormButton } from 'UI/Buttons/FormButton';
 
 export const FormFields = ({
 	handleRegisterChange,
@@ -45,9 +45,7 @@ export const FormFields = ({
 			</div> */}
 			<SelectsFields />
 			<InfoRegistration />
-			<div className={styles['btn-wrapper']}>
-				<button className={`blue-btn ${styles['open-signup']}`}>Sign Up</button>
-			</div>
+			<FormButton title="Sign up" fontSize={17} />
 		</>
 	);
 };

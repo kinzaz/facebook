@@ -7,7 +7,7 @@ import { FormInput } from 'UI/Inputs/FormInput';
 import { RegisterInputProps } from './RegisterInput.props';
 
 export const RegisterInput = ({
-	bottom,
+	// bottom,
 	...props
 }: RegisterInputProps): JSX.Element => {
 	const [field, meta] = useField(props);
@@ -26,13 +26,13 @@ export const RegisterInput = ({
 				/>
 				{errorExist && <i className="error_icon"></i>}
 			</div>
-			{errorExist && (
+			{/* {errorExist && (
 				<ErrorField
 					className={styles.error}
 					width={view1 ? 'medium' : 'small'}
 					name={props.name}
 				/>
-			)}
+			)} */}
 		</>
 	);
 };

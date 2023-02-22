@@ -7,7 +7,6 @@ import { FormInput } from 'UI/Inputs/FormInput';
 import { RegisterInputProps } from './RegisterInput.props';
 
 export const RegisterInput = ({
-	// bottom,
 	...props
 }: RegisterInputProps): JSX.Element => {
 	const [field, meta] = useField(props);

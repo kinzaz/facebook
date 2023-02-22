@@ -1,17 +1,14 @@
-import { DateOfBirthSelect } from '../SelectsFields/DateOfBirthSelect';
 import { InfoRegistration } from '../InfoRegistration';
-import styles from '../../style.module.scss';
-import { FormFieldsProps } from './FormFields.props';
 import { RegisterInput } from '../RegisterInput';
 import { InitialsInputs } from '../InitialsInputs';
-import { Header } from '../SelectsFields/Header';
 import { SelectsFields } from '../SelectsFields';
 import { FormButton } from 'UI/Buttons/FormButton';
+import { RegContext } from 'modules/Registration/context';
+import { useContext } from 'react';
 
-export const FormFields = ({
-	handleRegisterChange,
-	user,
-}: FormFieldsProps): JSX.Element => {
+export const FormFields = (): JSX.Element => {
+	const { handleRegisterChange } = useContext(RegContext);
+
 	return (
 		<>
 			<InitialsInputs />
@@ -27,22 +24,6 @@ export const FormFields = ({
 				name={'password'}
 				onChange={handleRegisterChange}
 			/>
-			{/* <div className={styles.col}>
-				<div className={styles['line-header']}>
-					Date of birth <i className="info_icon"></i>
-				</div>
-				<Header />
-				<DateOfBirthSelect
-					bDay={user.bDay}
-					bMonth={user.bMonth}
-					bYear={user.bYear}
-					handleRegisterChange={handleRegisterChange}
-				/>
-			</div>
-			<div className={styles.col}>
-				<Header />
-				<Gender handleRegisterChange={handleRegisterChange} />
-			</div> */}
 			<SelectsFields />
 			<InfoRegistration />
 			<FormButton title="Sign up" fontSize={17} />

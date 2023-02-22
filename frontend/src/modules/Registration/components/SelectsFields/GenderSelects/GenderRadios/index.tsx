@@ -1,12 +1,12 @@
 import { RadioInput } from 'UI/RadioInput';
-import { GenderRadioProps } from './Gender.props';
-import styles from './style.module.scss';
+import { useContext } from 'react';
+import { RegContext } from 'modules/Registration/context';
 
-export const GenderRadios = ({
-	handleRegisterChange,
-}: GenderRadioProps): JSX.Element => {
+export const GenderRadios = (): JSX.Element => {
+	const { handleRegisterChange } = useContext(RegContext);
+
 	return (
-		<div className={styles['grid-gender']}>
+		<>
 			<RadioInput
 				title="Male"
 				name="gender"
@@ -25,6 +25,6 @@ export const GenderRadios = ({
 				value={'custom'}
 				onChange={handleRegisterChange}
 			/>
-		</div>
+		</>
 	);
 };

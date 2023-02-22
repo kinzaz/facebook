@@ -1,12 +1,10 @@
-import { GenderWrapper } from './GenderWrapper';
 import { GenderRadios } from './GenderRadios';
-import { Header } from '../Header';
+import { SelectsFieldWrapper } from '../SelectsFieldWrapper';
 
 export const GenderSelects = (): JSX.Element => {
 	return (
-		<GenderWrapper>
-			<Header title="Gender" />
+		<SelectsFieldWrapper header="Gender">
 			<GenderRadios />
-		</GenderWrapper>
+		</SelectsFieldWrapper>
 	);
 };

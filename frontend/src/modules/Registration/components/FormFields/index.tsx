@@ -3,27 +3,29 @@ import { RegisterInput } from '../RegisterInput';
 import { InitialsInputs } from '../InitialsInputs';
 import { SelectsFields } from '../SelectsFields';
 import { FormButton } from 'UI/Buttons/FormButton';
-import { RegContext } from 'modules/Registration/context';
-import { useContext } from 'react';
+import { FormFieldsProps } from './FormFields.props';
+import styles from './style.module.scss';
 
-export const FormFields = (): JSX.Element => {
-	const { handleRegisterChange } = useContext(RegContext);
-
+export const FormFields = ({
+	handleRegisterChange,
+}: FormFieldsProps): JSX.Element => {
 	return (
 		<>
-			<InitialsInputs />
-			<RegisterInput
-				type="text"
-				placeholder="Mobile number or email address"
-				name={'email'}
-				onChange={handleRegisterChange}
-			/>
-			<RegisterInput
-				type="password"
-				placeholder="New password"
-				name={'password'}
-				onChange={handleRegisterChange}
-			/>
+			<div className={styles['input-text']}>
+				<InitialsInputs />
+				<RegisterInput
+					type="text"
+					placeholder="Mobile number or email address"
+					name={'email'}
+					onChange={handleRegisterChange}
+				/>
+				<RegisterInput
+					type="password"
+					placeholder="New password"
+					name={'password'}
+					onChange={handleRegisterChange}
+				/>
+			</div>
 			<SelectsFields />
 			<InfoRegistration />
 			<FormButton title="Sign up" fontSize={17} />

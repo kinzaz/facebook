@@ -1,10 +1,8 @@
-import { useDate } from 'hooks/useDate';
-import { RadioInput } from 'UI/RadioInput';
-import { SelectInput } from 'UI/SelectInput';
-import { GenderRadioProps } from './Gender.props';
-import styles from './style.module.scss';
 import { useContext } from 'react';
+import { useDate } from 'hooks/useDate';
+import { SelectInput } from 'UI/SelectInput';
 import { RegContext } from 'modules/Registration/context';
+
 export const BirthSelects = (): JSX.Element => {
 	const { days, months, years } = useDate();
 	const { handleRegisterChange, user } = useContext(RegContext);

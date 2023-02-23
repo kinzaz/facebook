@@ -1,0 +1,21 @@
+.header {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid var(--bg-third);
+	i {
+		position: absolute;
+		right: 0;
+		cursor: pointer;
+	}
+	span:first-of-type {
+		font-weight: 700;
+		font-size: 32px;
+	}
+	span:last-of-type {
+		font-size: 15px;
+		color: var(--color-secondary);
+	}
+}

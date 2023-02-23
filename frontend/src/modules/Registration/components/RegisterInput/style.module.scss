@@ -102,7 +102,7 @@
 
 .register-input {
 	position: relative;
-	width: 320px;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -119,9 +119,9 @@
 	border-color: #b94a48;
 }
 
-@media (min-width: 539px) {
-	.register-input {
-		width: 370px;
-	}
-}
+// @media (min-width: 539px) {
+// 	.register-input {
+// 		width: 370px;
+// 	}
+// }
 

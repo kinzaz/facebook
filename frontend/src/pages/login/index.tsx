@@ -8,7 +8,7 @@ export const Login = (): JSX.Element => {
 	return (
 		<div className={styles.login}>
 			<div className={styles.wrapper}>
-				{/* <LoginForm /> */}
+				<LoginForm />
 				{/* <RegisterForm /> */}
 				<Registration />
 				<Footer />

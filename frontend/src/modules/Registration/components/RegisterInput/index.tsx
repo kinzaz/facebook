@@ -10,9 +10,6 @@ export const RegisterInput = ({
 	...props
 }: RegisterInputProps): JSX.Element => {
 	const [field, meta] = useField(props);
-	const view1 = useMediaQuery({
-		query: '(min-width: 539px)',
-	});
 	const errorExist = meta.error && meta.touched;
 
 	return (
@@ -24,14 +21,10 @@ export const RegisterInput = ({
 					{...props}
 				/>
 				{errorExist && <i className="error_icon"></i>}
+				{errorExist && (
+					<ErrorField className={styles.error} name={props.name} />
+				)}
 			</div>
-			{/* {errorExist && (
-				<ErrorField
-					className={styles.error}
-					width={view1 ? 'medium' : 'small'}
-					name={props.name}
-				/>
-			)} */}
 		</>
 	);
 };

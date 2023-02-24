@@ -5,6 +5,7 @@ import { SelectsFields } from '../SelectsFields';
 import { FormButton } from 'UI/Buttons/FormButton';
 import { FormFieldsProps } from './FormFields.props';
 import styles from './style.module.scss';
+import { useState } from 'react';
 
 export const FormFields = ({
 	handleRegisterChange,

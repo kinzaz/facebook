@@ -6,13 +6,11 @@ import { Profile } from './pages/profile';
 
 const App = (): JSX.Element => {
 	return (
-		<div>
-			<Routes>
-				<Route path="/" element={<Home />} />
-				<Route path="/login" element={<Login />} />
-				<Route path="/profile" element={<Profile />} />
-			</Routes>
-		</div>
+		<Routes>
+			<Route path="/" element={<Home />} />
+			<Route path="/login" element={<Login />} />
+			<Route path="/profile" element={<Profile />} />
+		</Routes>
 	);
 };
 

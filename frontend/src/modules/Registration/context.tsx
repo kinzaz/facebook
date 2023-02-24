@@ -17,15 +17,26 @@ interface IRegContext {
 	handleRegisterChange: (
 		e: React.ChangeEvent<HTMLSelectElement | HTMLInputElement>
 	) => void;
+	dateError: string;
+	genderError: string;
+	setDateError: React.Dispatch<React.SetStateAction<string>>;
+	setGenderError: React.Dispatch<React.SetStateAction<string>>;
 }
 
 export const RegContext = createContext<IRegContext>({
 	user: userInfos,
 	handleRegisterChange: () => {},
+	dateError: '',
+	genderError: '',
+	setDateError: () => {},
+	setGenderError: () => {},
 });
 
 export const RegProvider = ({ children }) => {
 	const [user, setUser] = useState<UserDataRegistration>(userInfos);
+	const [dateError, setDateError] = useState('');
+	const [genderError, setGenderError] = useState('');
+	console.log(genderError);
 
 	const handleRegisterChange = (
 		e: React.ChangeEvent<HTMLSelectElement | HTMLInputElement>
@@ -35,7 +46,16 @@ export const RegProvider = ({ children }) => {
 	};
 
 	return (
-		<RegContext.Provider value={{ user, handleRegisterChange }}>
+		<RegContext.Provider
+			value={{
+				user,
+				handleRegisterChange,
+				dateError,
+				genderError,
+				setDateError,
+				setGenderError,
+			}}
+		>
 			{children}
 		</RegContext.Provider>
 	);

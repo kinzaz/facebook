@@ -6,5 +6,5 @@ export const FormInput = ({
 	className,
 	...props
 }: FormInputProps): JSX.Element => {
-	return <input className={cn(className, styles.input)} {...props} />;
+	return <input className={cn(styles.input, className)} {...props} />;
 };

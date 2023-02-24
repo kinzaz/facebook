@@ -6,13 +6,12 @@ import styles from './style.module.scss';
 
 export const Login = (): JSX.Element => {
 	return (
-		<div className={styles.login}>
-			<div className={styles.wrapper}>
-				<LoginForm />
-				{/* <RegisterForm /> */}
-				<Registration />
-				<Footer />
-			</div>
+		// <div className={styles.login}>
+		<div className={styles.wrapper}>
+			<Registration />
+			{/* // 		<LoginForm /> */}
+			{/* // 		<Footer /> */}
 		</div>
+		// </div>
 	);
 };

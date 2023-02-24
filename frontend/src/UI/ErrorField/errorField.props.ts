@@ -11,4 +11,5 @@ export interface ErrorFieldProps
 	name: string;
 	arrowDirection?: ArrowTo;
 	width?: ErrorFieldWidth;
+	titleError?: string;
 }

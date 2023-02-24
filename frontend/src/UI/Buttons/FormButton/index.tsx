@@ -11,6 +11,7 @@ export const FormButton = ({
 }: FormButtonProps): JSX.Element => {
 	return (
 		<button
+			type="submit"
 			className={cn(styles['open-signup'], className, {
 				[styles['open-signup_blue']]: color === 'blue',
 				[styles['open-signup_17px']]: fontSize === 17,

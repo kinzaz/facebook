@@ -7,6 +7,7 @@ export const ErrorField = ({
 	name,
 	arrowDirection = 'top',
 	width,
+	titleError,
 	className,
 }: ErrorFieldProps): JSX.Element => {
 	const [field] = useField(name);
@@ -20,7 +21,7 @@ export const ErrorField = ({
 					[styles['wrap_big']]: width === 'big',
 				})}
 			>
-				<ErrorMessage name={field.name} />
+				{titleError ? titleError : <ErrorMessage name={field.name} />}
 				<span
 					className={cn({
 						[styles['arrow-top']]: arrowDirection === 'top',

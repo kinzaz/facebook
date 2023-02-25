@@ -9,7 +9,7 @@ export const Login = (): JSX.Element => {
 		// <div className={styles.login}>
 		<div className={styles.wrapper}>
 			<Registration />
-			{/* // 		<LoginForm /> */}
+			<LoginForm />
 			{/* // 		<Footer /> */}
 		</div>
 		// </div>

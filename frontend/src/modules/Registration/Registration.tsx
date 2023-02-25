@@ -1,4 +1,4 @@
-import { Blur } from 'UI/Blur';
+import { Popup } from 'UI/Popup';
 import { HeaderRegistration } from './components/HeaderRegistration';
 import { RegisterWrapper } from './components/RegisterWrapper';
 import { RegProvider } from './context';
@@ -8,12 +8,12 @@ import styles from './style.module.scss';
 export const Registration = (): JSX.Element => {
 	return (
 		<RegProvider>
-			<Blur>
+			<Popup>
 				<RegisterWrapper className={styles.register}>
 					<HeaderRegistration />
 					<FormComponent />
 				</RegisterWrapper>
-			</Blur>
+			</Popup>
 		</RegProvider>
 	);
 };

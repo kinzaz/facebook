@@ -1,9 +1,7 @@
-import { ErrorMessage, useField } from 'formik';
-import { useMediaQuery } from 'react-responsive';
+import { useField } from 'formik';
 import styles from './style.module.scss';
-import { AuthInput } from 'components/inputs/authInput';
-import { ErrorField } from 'UI/ErrorField';
-import { FormInput } from 'UI/Inputs/FormInput';
+import { ErrorField } from 'shared/UI/ErrorField';
+import { FormInput } from 'shared/UI/inputs/FormInput';
 import { RegisterInputProps } from './RegisterInput.props';
 
 export const RegisterInput = ({

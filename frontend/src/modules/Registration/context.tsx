@@ -1,5 +1,5 @@
 import { createContext, useState } from 'react';
-import { UserDataRegistration } from './types';
+import { UserDataRegistration } from './lib/types';
 
 const userInfos = {
 	first_name: '',

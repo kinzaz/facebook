@@ -1,18 +1,18 @@
-import { Popup } from 'UI/Popup';
+import { Popup } from 'shared/UI/Popup';
 import { HeaderRegistration } from './components/HeaderRegistration';
-import { RegisterWrapper } from './components/RegisterWrapper';
 import { RegProvider } from './context';
 import { FormComponent } from './components/FormComponent';
 import styles from './style.module.scss';
+import { FormWrapper } from 'shared/UI/FormWrapper';
 
 export const Registration = (): JSX.Element => {
 	return (
 		<RegProvider>
 			<Popup>
-				<RegisterWrapper className={styles.register}>
+				<FormWrapper className={styles.register}>
 					<HeaderRegistration />
 					<FormComponent />
-				</RegisterWrapper>
+				</FormWrapper>
 			</Popup>
 		</RegProvider>
 	);

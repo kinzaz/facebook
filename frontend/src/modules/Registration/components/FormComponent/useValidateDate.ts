@@ -1,4 +1,4 @@
-import { UserDataRegistration } from 'modules/Registration/types';
+import { UserDataRegistration } from 'modules/Registration/lib/types';
 
 export const useValidateDate = (
 	user: UserDataRegistration,

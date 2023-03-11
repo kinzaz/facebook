@@ -1,5 +1,5 @@
 import { FieldHookConfig } from 'formik';
-import { InputProps } from 'types/InputProps';
+import { InputProps } from 'shared/types/InputProps';
 
 type Values = { email: string; password: string };
 

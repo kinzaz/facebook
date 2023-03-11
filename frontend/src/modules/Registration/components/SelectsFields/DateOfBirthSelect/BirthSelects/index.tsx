@@ -1,8 +1,8 @@
 import { useContext } from 'react';
 import { useDate } from 'hooks/useDate';
-import { SelectInput } from 'UI/SelectInput';
+import { SelectInput } from 'shared/UI/SelectInput';
 import { RegContext } from 'modules/Registration/context';
-import { ErrorField } from 'UI/ErrorField';
+import { ErrorField } from 'shared/UI/ErrorField';
 
 export const BirthSelects = (): JSX.Element => {
 	const { days, months, years } = useDate();

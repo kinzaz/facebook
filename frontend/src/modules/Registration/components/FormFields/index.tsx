@@ -2,7 +2,7 @@ import { InfoRegistration } from '../InfoRegistration';
 import { RegisterInput } from '../RegisterInput';
 import { InitialsInputs } from '../InitialsInputs';
 import { SelectsFields } from '../SelectsFields';
-import { FormButton } from 'UI/Buttons/FormButton';
+import { FormButton } from 'shared/UI/buttons/FormButton';
 import { FormFieldsProps } from './FormFields.props';
 import styles from './style.module.scss';
 import { useState } from 'react';

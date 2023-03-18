@@ -1,9 +1,8 @@
-import { ErrorMessage, useField } from 'formik';
+import { useField } from 'formik';
 import { LoginInputProps } from './LoginInput.props';
-import { useMediaQuery } from 'react-responsive';
 import styles from './style.module.scss';
-import { FormInput } from '../../../../shared/UI/inputs/FormInput';
-import { ErrorField } from '../../../../shared/UI/ErrorField';
+import { FormInput } from '@shared/UI/inputs/FormInput';
+import { ErrorField } from '@shared/UI/ErrorField';
 
 export const LoginInput = ({
 	bottom,

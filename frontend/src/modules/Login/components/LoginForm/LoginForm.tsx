@@ -1,7 +1,7 @@
 import { LoginInput } from '../LoginInput';
 import { Form } from 'formik';
 import { useState } from 'react';
-import { FormButton } from '../../../../shared/UI/buttons/FormButton';
+import { FormButton } from '@shared/UI/buttons/FormButton';
 
 export const LoginForm = (): JSX.Element => {
 	const loginInfos = {

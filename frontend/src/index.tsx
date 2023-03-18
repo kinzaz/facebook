@@ -7,7 +7,6 @@ import { Provider } from 'react-redux';
 import { store } from './store';
 
 import './index.scss';
-import './styles/icons/icons.css';
 
 createRoot(document!.getElementById('root')!).render(
 	<Provider store={store}>

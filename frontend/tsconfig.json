@@ -17,7 +17,15 @@
 		"jsx": "preserve",
 		"useUnknownInCatchVariables": false,
 		"noImplicitAny": false,
-		"baseUrl": "src/"
+		"baseUrl": "src/",
+		"paths": {
+			"@modules/*": ["modules/*"],
+			"@assets/*": ["assets/*"],
+			"@shared/*": ["shared/*"],
+			"@hooks/*": ["hooks/*"],
+			"@pages/*": ["pages/*"],
+			"@styles/*": ["styles/*"],
+		}
 	},
 	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src"],
 	"files": ["./src/index.d.ts"],

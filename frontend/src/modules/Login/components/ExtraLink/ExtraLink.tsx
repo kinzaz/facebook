@@ -1,4 +1,4 @@
-import { footerForm } from 'modules/Login/lib/constants';
+import { footerForm } from '@modules/Login/lib/constants';
 import { Link, LinkProps } from 'react-router-dom';
 
 export const ExtraLink = ({

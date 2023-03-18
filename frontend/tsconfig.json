@@ -17,7 +17,7 @@
 		"jsx": "preserve",
 		"useUnknownInCatchVariables": false,
 		"noImplicitAny": false,
-		"baseUrl": "src/"
+		"baseUrl": "src/",
 	},
 	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src"],
 	"files": ["./src/index.d.ts"],

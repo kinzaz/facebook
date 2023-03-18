@@ -1,5 +1,5 @@
 import styles from './LoginHeader.module.scss';
-import { subHeaderLogin } from 'modules/Login/lib/constants';
+import { subHeaderLogin } from '../../lib/constants';
 
 export const LoginHeader = (): JSX.Element => {
 	return (

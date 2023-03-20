@@ -1,7 +1,7 @@
-import { RadioInput } from 'shared/UI/RadioInput';
 import { useContext } from 'react';
-import { RegContext } from 'modules/Registration/context';
-import { ErrorField } from 'shared/UI/ErrorField';
+import { RadioInput } from '@shared/UI/RadioInput';
+import { RegContext } from '@modules/Registration/context';
+import { ErrorField } from '@shared/UI/ErrorField';
 import { useField } from 'formik';
 
 export const GenderRadios = (): JSX.Element => {

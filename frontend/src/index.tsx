@@ -8,7 +8,7 @@ import { store } from './store';
 
 import './index.scss';
 
-createRoot(document!.getElementById('root')!).render(
+createRoot(document.getElementById('root')!).render(
 	<Provider store={store}>
 		<Router>
 			<App />

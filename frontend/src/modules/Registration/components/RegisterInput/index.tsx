@@ -1,7 +1,7 @@
 import { useField } from 'formik';
 import styles from './style.module.scss';
-import { ErrorField } from 'shared/UI/ErrorField';
-import { FormInput } from 'shared/UI/inputs/FormInput';
+import { ErrorField } from '@shared/UI/ErrorField';
+import { FormInput } from '@shared/UI/inputs/FormInput';
 import { RegisterInputProps } from './RegisterInput.props';
 
 export const RegisterInput = ({

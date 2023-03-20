@@ -1,7 +1,7 @@
 import { Form, Formik } from 'formik';
-import { DATE_ERRORS, GENDER_ERRORS } from 'modules/Registration/lib/constants';
-import { RegContext } from 'modules/Registration/context';
-import { registerValidation } from 'modules/Registration/lib/validationSchema';
+import { DATE_ERRORS, GENDER_ERRORS } from '@modules/Registration/lib/constants';
+import { RegContext } from '@modules/Registration/context';
+import { registerValidation } from '@modules/Registration/lib/validationSchema';
 import { useContext, useState } from 'react';
 import { FormFields } from '../FormFields';
 import styles from './style.module.scss';

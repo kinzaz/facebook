@@ -1,4 +1,4 @@
-import { RegContext } from 'modules/Registration/context';
+import { RegContext } from '@modules/Registration/context';
 import { useContext } from 'react';
 import { RegisterInput } from '../RegisterInput';
 import styles from './style.module.scss';

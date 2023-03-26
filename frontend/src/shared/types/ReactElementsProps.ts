@@ -4,6 +4,7 @@ import {
 	HTMLAttributes,
 	InputHTMLAttributes,
 	SelectHTMLAttributes,
+	FormHTMLAttributes,
 } from 'react';
 
 export interface InputProps
@@ -25,4 +26,10 @@ export interface SelectProps
 	extends DetailedHTMLProps<
 		SelectHTMLAttributes<HTMLSelectElement>,
 		HTMLSelectElement
+	> {}
+
+export interface FormProps
+	extends DetailedHTMLProps<
+		FormHTMLAttributes<HTMLFormElement>,
+		HTMLFormElement
 	> {}

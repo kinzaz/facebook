@@ -1,7 +1,25 @@
 .wrapper {
+	position: relative;
 	background: var(--bg-primary);
 	box-shadow: 0 1px 2px var(--shadow-1);
 	padding: 1rem;
 	padding-bottom: 2rem;
 	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	width: 100%;
+	height: fit-content;
+	button {
+		width: 100%;
+	}
+	& a:last-child {
+		display: block;
+		position: absolute;
+		bottom: -2rem;
+		right: 50%;
+		white-space: nowrap;
+		transform: translateX(50%);
+	}
 }

@@ -8,8 +8,8 @@ export const LoginPage = (): JSX.Element => {
 	return (
 		// <div className={styles.login}>
 		<div className={styles.wrapper}>
-			<Registration />
-			{/* <Login /> */}
+			{/* <Registration /> */}
+			<Login />
 			{/* <Footer /> */}
 		</div>
 		// </div>

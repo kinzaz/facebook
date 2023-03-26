@@ -2,8 +2,11 @@ import { LoginInput } from '../LoginInput';
 import { Form } from 'formik';
 import { useState } from 'react';
 import { FormButton } from '@shared/UI/buttons/FormButton';
+import cn from 'classnames';
+import { LoginFormProps } from './LoginForm.props';
+import styles from './style.module.scss';
 
-export const LoginForm = (): JSX.Element => {
+export const LoginForm = ({ className }: LoginFormProps): JSX.Element => {
 	const loginInfos = {
 		email: '',
 		password: '',
@@ -17,7 +20,7 @@ export const LoginForm = (): JSX.Element => {
 
 	return (
 		<>
-			<Form>
+			<Form className={cn(styles.form, className)}>
 				<LoginInput
 					placeholder="Email address or phone number"
 					name="email"

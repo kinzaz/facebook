@@ -1,17 +1,17 @@
 import { Login } from '@modules/Login';
-import { Footer } from '@shared/UI/Footer';
 import { Registration } from '@modules/Registration';
-import { FormInput } from '@shared/UI/inputs/FormInput';
+import { FooterLogin } from '@modules/FooterLogin';
 import styles from './style.module.scss';
+import { LoginPageWrapper } from './UI/LoginPageWrapper';
 
 export const LoginPage = (): JSX.Element => {
 	return (
-		// <div className={styles.login}>
-		<div className={styles.wrapper}>
-			{/* <Registration /> */}
-			<Login />
-			{/* <Footer /> */}
-		</div>
-		// </div>
+		<>
+			<LoginPageWrapper className={styles.wrapper}>
+				<Registration />
+				<Login />
+			</LoginPageWrapper>
+			<FooterLogin className={styles.footer} />
+		</>
 	);
 };

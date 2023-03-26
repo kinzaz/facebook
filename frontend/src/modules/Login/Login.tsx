@@ -10,7 +10,7 @@ import { LoginForm } from './components/LoginForm';
 import { createAccount, footerForm, forgottenPass } from './lib/constants';
 import { ExtraLink } from './components/ExtraLink';
 import { RecoveryLink } from './components/RecoveryLink';
-import { FormWrapper } from '@shared/UI/FormWrapper';
+import { FormWrapper } from '@shared/UI/wrappers/FormWrapper';
 import { Splitter } from '@shared/UI/Splitter';
 import { FormButton } from '@shared/UI/buttons/FormButton';
 import { LoginPageWrapper } from './UI/LoginPageWrapper';

@@ -33,3 +33,6 @@ export interface FormProps
 		FormHTMLAttributes<HTMLFormElement>,
 		HTMLFormElement
 	> {}
+
+export interface FooterProps
+	extends DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> {}

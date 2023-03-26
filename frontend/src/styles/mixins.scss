@@ -43,3 +43,8 @@
 		@content;
 	}
 }
+@mixin for-height-500-down {
+	@media (max-height: 500px) {
+		@content;
+	}
+}

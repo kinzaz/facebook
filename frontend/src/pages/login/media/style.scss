@@ -1,0 +1,11 @@
+@include for-height-500-down {
+	.wrapper {
+		height: 100% !important;
+	}
+}
+
+@include for-tablet-up {
+	.footer {
+		width: 70%;
+	}
+}

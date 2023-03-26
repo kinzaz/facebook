@@ -1,3 +1,10 @@
+@import './media/style.scss';
+
 .wrapper {
-	background: var(--bg-secondary);
+	height: 100vh;
+	padding: 2rem;
+}
+
+.footer {
+	margin: 0 auto;
 }

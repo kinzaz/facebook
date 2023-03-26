@@ -1,0 +1,19 @@
+@include for-mobileS-up {
+	.loginPage {
+		.formWrapper {
+			width: 90%;
+			max-width: 350px;
+			min-width: 250px;
+		}
+	}
+}
+
+@include for-mobileL-up {
+	.loginPage {
+		.formWrapper {
+			min-width: 350px;
+			max-width: 400px;
+			width: 60%;
+		}
+	}
+}

@@ -1,3 +1,6 @@
+@import './media/mobile.scss';
+@import './media/tab_lap.scss';
+
 .loginPage {
 	height: 78vh;
 	.headers {
@@ -8,13 +11,11 @@
 		}
 	}
 	.formWrapper {
-		width: 350px;
 		margin: 1rem auto;
 		user-select: none;
 		.loginForm {
 			button {
 				height: 50px;
-
 			}
 		}
 		.splitter {
@@ -28,55 +29,3 @@
 		}
 	}
 }
-
-@media (min-width: 850px) {
-	.loginPage {
-		display: flex;
-		align-items: center;
-		max-width: 1000px;
-		margin: 0 auto;
-	}
-}
-
-// *************************************************************
-
-
-/*----Media queries--------------*/
-// @media (min-width: 539px) {
-// 	.footer .footer-wrap {
-// 		max-width: 520px;
-// 	}
-// 	.register {
-// 		width: 400px;
-// 	}
-// 	.register .form .col .grid select,
-// 	.register .form .col .grid label {
-// 		width: 110px;
-// 	}
-// }
-// @media (min-width: 650px) {
-// 	.footer .footer-wrap {
-// 		max-width: 650px;
-// 	}
-// }
-// @media (min-width: 850px) {
-	// .headers {
-	// 	display: flex;
-	// 	flex-direction: column;
-	// 	width: 50%;
-	// 	margin-bottom: 15vh;
-	// }
-	// .headers img {
-	// 	width: 300px;
-	// 	margin-left: -1.7rem;
-	// }
-	// .headers span {
-	// 	font-size: 28px;
-	// }
-	// .form {
-	// 	width: 400px;
-	// }
-	// .footer .footer-wrap {
-	// 	max-width: 900px;
-	// }
-// }

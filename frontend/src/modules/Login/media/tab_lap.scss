@@ -1,0 +1,12 @@
+@include for-tablet-up {
+	.loginPage {
+		display: flex;
+		align-items: center;
+		max-width: 1000px;
+		margin: 0 auto;
+		.formWrapper {
+			width: 35%;
+			min-width: 300px;
+		}
+	}
+}
